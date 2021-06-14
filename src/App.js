@@ -1,5 +1,5 @@
-
 import './App.css';
+import AwardParameterInput from './components/AwardParameterInput'
 
 import {
   BrowserRouter as Router,
@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Route exact path="/" component={AwardParameterInput} />
+        <Route exact path ="/" component={AwardParameterInput} />
       </div>
     </Router>
   );

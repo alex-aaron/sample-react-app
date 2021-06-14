@@ -9,16 +9,25 @@ class AwardParameterInput extends Component {
       }
   }
 
+  handleOnChange = event => {
+      this.setState({
+        categories: event.target.result
+      })
+  }
+
+  handleSubmit = event => {
+
+  }
+
 
   render() {
 
     return (
       <div>
         <form onYearSubmit={this.handleYearSubmit}>
-          <label>Category Name: </label>
-          <input type="text" id="category" onChange={this.handleOnChange}></input><br></br>
-          <label>Nominee 1:</label>
-          <input type="text" id="nominee1"></input><br></br>
+          <label>How many categories do you want to create? </label>
+          <input type="text" id="categories" onChange={this.handleOnChange}></input><br></br>
+          <input type="submit"></input>
         </form>
       </div>
     );
