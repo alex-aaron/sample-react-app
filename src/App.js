@@ -8,9 +8,11 @@ import {
 
 function App() {
   return (
-    <div className="App">
-      Sample React App
-    </div>
+    <Router>
+      <div className="App">
+        Sample React App
+      </div>
+    </Router>
   );
 }
 
