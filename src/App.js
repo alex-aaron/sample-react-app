@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        Sample React App
+        <Route exact path="/" component={AwardParameterInput} />
       </div>
     </Router>
   );
