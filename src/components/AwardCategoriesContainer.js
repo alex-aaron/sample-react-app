@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CategoryInput from './CategoryInput'
 
 class AwardCategoriesContainer extends Component {
 
@@ -7,6 +8,14 @@ class AwardCategoriesContainer extends Component {
       this.state = {
         year: "",
         categories: []
+      }
+  }
+
+  renderInputs = () => {
+      if (this.props.categories > 0) {
+          for (let i = 0; i < this.props.categories; i++) {
+              <CategoryInput />
+          }
       }
   }
 

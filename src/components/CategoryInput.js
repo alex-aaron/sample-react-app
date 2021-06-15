@@ -16,18 +16,6 @@ class CategoryInput extends Component {
       }
   }
 
-  handleOnChange = event => {
-      this.setState({
-        : event.target.result
-      })
-  }
-
-  handleSubmit = event => {
-    this.setState({
-        submitted: true
-    })
-  }
-
 
   render() {
 
@@ -37,17 +25,17 @@ class CategoryInput extends Component {
           <label>Category Name: </label>
           <input type="text" id="categoryName" onChange={this.handleOnChange}></input><br></br>
           <label>Nominee 1: </label>
-          <input type="text" id="nominee1" onChange={this.handleOnChange}></input><br></br>
+          <input type="text" id="nominee1" onChange={event => this.handleOnChange}></input><br></br>
           <label>Nominee 2: </label>
-          <input type="text" id="nominee2" onChange={this.handleOnChange}></input><br></br>
+          <input type="text" id="nominee2" onChange={event => this.handleOnChange}></input><br></br>
           <label>Nominee 3: </label>
-          <input type="text" id="nominee3" onChange={this.handleOnChange}></input><br></br>
+          <input type="text" id="nominee3" onChange={event => this.handleOnChange}></input><br></br>
           <label>Nominee 4: </label>
-          <input type="text" id="nominee4" onChange={this.handleOnChange}></input><br></br>
+          <input type="text" id="nominee4" onChange={event => this.handleOnChange}></input><br></br>
           <label>Nominee 5: </label>
-          <input type="text" id="nominee5" onChange={this.handleOnChange}></input><br></br>
+          <input type="text" id="nominee5" onChange={event => this.handleOnChange}></input><br></br>
           <label>Winner: </label>
-          <input type="text" id="winner" onChange={this.handleOnChange}></input><br></br>
+          <input type="text" id="winner" onChange={event => this.handleOnChange}></input><br></br>
           <input type="submit"></input>
         </form>
         <AwardCategoriesContainer categories={this.state.categories} />
