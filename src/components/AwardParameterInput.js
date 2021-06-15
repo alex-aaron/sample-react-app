@@ -23,7 +23,6 @@ class AwardParameterInput extends Component {
     })
   }
 
-
   render() {
 
     return (

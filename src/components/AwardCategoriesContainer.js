@@ -25,6 +25,7 @@ class AwardCategoriesContainer extends Component {
     return (
       <div>
         <p>Categories: {this.props.categories}</p>
+        {this.renderInputs()}
       </div>
     );
   }
