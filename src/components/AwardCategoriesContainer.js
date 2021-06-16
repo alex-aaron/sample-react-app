@@ -19,7 +19,6 @@ class AwardCategoriesContainer extends Component {
       }
   }
 
-
   render() {
 
     return (
